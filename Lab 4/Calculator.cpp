@@ -39,7 +39,8 @@ Serial.println(computeTime);
 
 }
 
-long calculate(long firstNum, long secondNum, char operation, long answer) {
+long calculate(long firstNum, long secondNum, char operation) {
+  long answer = 0;
   switch (operation) {
     case '+':
       answer = firstNum + secondNum;
