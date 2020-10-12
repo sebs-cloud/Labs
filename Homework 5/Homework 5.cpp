@@ -1,10 +1,9 @@
 #include <Arduino.h>
 
-
 boolean powerOn = false;
 void setup() {
      Serial.begin(9600);
-     pinMode(2, INPUT_PULLUP); //Reading button value
+     pinMode(2, INPUT); //Reading button value
      pinMode(7, OUTPUT); //Output to LED
      pinMode(5, OUTPUT); //Output to MOSFET
 }
